@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=google">
+        <!--<meta http-equiv="refresh" content="3" >-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form</p>
+        <form id="survey-form">
+            <div>
+                <label id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter name here" required></input>
+            </div>
+            <div>
+                <label id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter email here" required></input> <!--add validation of correct email-->
+            </div>
+            <div>
+                <label id="number-label">Age</label>
+                <input id="number" type="number" min=10 max=100 placeholder="Enter age here"></input>
+            </div>
+            <div>
+                <select id="dropdown">
+                    <option value="Option1">Option1</option>
+                    <option value="Option2">Option2</option>
+                    <option value="Option3">Option3</option>
+                </select>
+            </div>
+            <!--Radio buttons-->
+            <div>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <!--Checkboxes-->
+            <div>
+                <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+                <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+            </div>
+            <!--Text Area-->
+            <textarea name="message" rows="10" cols="30">Enter additional comments here</textarea>
+            <!--submit button-->
+            <input type="submit" value="Submit" id="submit">
+        </form>
+
+    </body>
+</html>
